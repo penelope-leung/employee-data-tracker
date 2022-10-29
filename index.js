@@ -34,11 +34,11 @@ function init() {
         name: "newDepartment",
         message: "What is the name of department?",
         validate: (answer) => {
-          if (answer !== "Add "newDepartment" to the database" (toDo);{
-
+          if (answer !== '') {
+            console.log(`Add ${newDepartment} to the database (toDo)`);
           }
+         
           return "Please enter at least one character.";
-
         }
       },
     {
@@ -78,8 +78,7 @@ function init() {
       ],
       validate: (answer) => {
         if (answer !== "") {
-          return "Add "newDepartment" to the database" (toDo);
-          ; 
+          return `Add ${department} to the database` (toDo);
           }
           return "Please choose one";
         },
@@ -90,7 +89,7 @@ function init() {
       message: "What is the employee's first name?",
       validate: (answer) => {
         if (answer !== "") {
-          return true;
+          return (newEmployeeFirstName);
         } return  "Please enter at least one character.";
         }
     
@@ -101,7 +100,7 @@ function init() {
       message: "What is the employee's last name?",
       validate: (answer) => {
         if (answer !== true) {
-          return true;
+          return (newEmployeeLastName);
         }
           return "Please enter at least one character.";
         }
@@ -143,7 +142,7 @@ function init() {
         ],
       validate: (answer) => {
         if (answer !== "") {
-          return "Add "newEmployeeName" to the database"(toDo);
+          return `Add ${newEmployeeName} to the database` (toDo);
         }
         return  "Please enter at least one character.";
       },
@@ -189,7 +188,7 @@ function init() {
         }
         return "Please choose one";
       },
-    },
+    }])
   //pick a thing to do
     .then((answers) => {
       switch (answers.toDo) {
@@ -219,7 +218,9 @@ function init() {
       }
 
       console.log("answers", answers);
-    }}
+    });
+  }
+  
   
 //function return after choose a answer
 function viewEmployee() {
