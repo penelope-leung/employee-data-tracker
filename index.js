@@ -23,13 +23,15 @@ function init() {
           "Quit",
         ],
         validate: (answer) => {
-          if (answer !== "") {
-            return true;
+          if (answer !== "View All Employee","View New Roles", "View All Department") {
+            console.table(result(toDo));
+          } else if (answer !== "Quit") {
+            console.log('Goodbye!')
           }
           return "Please choose one";
         },
       },
-      {
+     {
         type: "input",
         name: "newDepartment",
         message: "What is the name of department?",
@@ -255,7 +257,7 @@ function viewRoles() {
     console.table(rows);
   });
 }
-function addRole() {
+function newRole() {
   console.log("need to finish function");
   db.promise()
   .query("SELECT * FROM employee")
