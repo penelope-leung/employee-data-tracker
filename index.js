@@ -221,7 +221,7 @@ function init() {
 
       console.log("answers", answers);
     });
-  }
+  };
   
   
 //function return after choose a answer
@@ -273,7 +273,7 @@ function viewDepartment() {
     console.table(rows);
   });
 }
-function addDepartment() {
+function newDepartment() {
   console.log("need to finish function");
   db.promise()
   .query("SELECT * FROM employee")
