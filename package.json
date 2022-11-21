@@ -22,6 +22,7 @@
     "asciiart-logo": "^0.2.6",
     "console.table": "^0.10.0",
     "inquirer": "8.2.4",
+    "mysql": "^2.18.1",
     "mysql2": "^2.1.0"
   }
 }
